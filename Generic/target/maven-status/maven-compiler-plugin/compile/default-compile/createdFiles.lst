@@ -1,4 +1,5 @@
 reporting\ExtentManager.class
+reporting\AllureTestListner.class
 utilities\ConnectTOsqlDB.class
 reporting\ExtentTestManager.class
 reporting\ApplicationLog.class

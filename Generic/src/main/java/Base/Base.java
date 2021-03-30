@@ -35,10 +35,15 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+
 public class Base  {
 public static WebDriver driver;
     //ExtentReport
     public static ExtentReports extent;
+
+    public static WebDriver getDriver(){
+        return driver;
+    }
     @BeforeSuite
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
@@ -161,7 +166,7 @@ public void closeDriver(){
 }*/
     @AfterMethod
     public void afterEachTest(ITestResult result) throws IOException {
-        try {
+       /* try {
             ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
             ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
 
@@ -185,7 +190,7 @@ public void closeDriver(){
         } catch (NullPointerException e) {
             e.getStackTrace();
             e.getMessage();
-        }
+        }*/
         driver.close();
     }
     protected String getStackTrace(Throwable t) {

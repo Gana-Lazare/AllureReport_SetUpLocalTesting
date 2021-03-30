@@ -11,13 +11,14 @@ import javax.swing.text.Highlighter;
 
 import static org.openqa.selenium.support.Colors.RED;
 
+
 public class HomePageCrm extends Base {
 
     @FindBy(how = How.XPATH,using = "//*[@aria-label=\"Page d'accueil Airbnb\"]")
     public static WebElement logo;
 
     public void test(){
-     
+        System.out.println("hhello");
     }
 
 

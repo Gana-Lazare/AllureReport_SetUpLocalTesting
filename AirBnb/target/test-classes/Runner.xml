@@ -3,6 +3,9 @@
 <!-- for a multithread -->
 <!--<suite name="TestSuite" thread-count="2" parallel="tests">-->
 <suite name="AirBnb suite" >
+    <listeners>
+        <listener class-name="reporting.AllureTestListner"></listener>
+    </listeners>
 <parameter name="url" value="http://localhost:8081"></parameter>
     <parameter name="useCloud" value="false"></parameter>
     <parameter name="cloud" value="browserstack"></parameter>
@@ -14,6 +17,7 @@
     <parameter name="envAccessKey" value="PumTSx2dywjMsyXLZpmZ"></parameter>
 
     <test name="air bnb test">
+        
         <classes>
             <class name="TestLayer.HomePageTest"></class>
         </classes>

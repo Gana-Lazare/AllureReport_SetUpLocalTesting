@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- for a multithread -->
+<!--<suite name="TestSuite" thread-count="2" parallel="tests">-->
+<suite name="AirBnb suite" >
+<parameter name="url" value="http://localhost:8081"></parameter>
+    <parameter name="useCloud" value="false"></parameter>
+    <parameter name="cloud" value="browserstack"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="88"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="os_version" value="10"></parameter>
+    <parameter name="envUsername" value="ganahamrioui1"></parameter>
+    <parameter name="envAccessKey" value="PumTSx2dywjMsyXLZpmZ"></parameter>
+
+    <test name="air bnb test">
+        <classes>
+            <class name="TestLayer.HomePageTest"></class>
+        </classes>
+    </test>
+
+</suite>
+

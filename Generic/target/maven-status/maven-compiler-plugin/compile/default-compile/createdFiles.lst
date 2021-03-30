@@ -1,0 +1,7 @@
+reporting\ExtentManager.class
+utilities\ConnectTOsqlDB.class
+reporting\ExtentTestManager.class
+reporting\ApplicationLog.class
+TestData\ReadExcelFile.class
+reporting\TestLogger.class
+Base\Base.class
